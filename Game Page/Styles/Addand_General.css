@@ -219,6 +219,10 @@
   box-shadow: hsl(46, 100%, 66%) 0px 0px 16px;
 }
 
+.Addand_InfoPic:hover {
+  cursor: pointer;
+}
+
 .Addand_AboutBox {
   width: 100%;
   max-width: 600px;
