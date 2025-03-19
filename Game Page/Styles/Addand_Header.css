@@ -39,7 +39,7 @@ header {
   letter-spacing: 1.5px;
   width: 100%;
   min-width: 185px;
-  max-width: 500px;
+  max-width: 450px;
   height: 36px;
   border: 1px solid hsl(0, 100%, 22%);
   border-top-left-radius: 2px;
