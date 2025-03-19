@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@& Call of Duty Warzone Mobile</title>
+  <link rel="stylesheet" href="Game Page/Styles/Addand_Header.css">
+  <link rel="stylesheet" href="Game Page/Styles/Addand_General.css">
+  <link rel="stylesheet" href="Game Page/Styles/Addand_Game.css">
+  <link rel="stylesheet" href="Game Page/Styles/Game Page.css">
+  <link rel="stylesheet" href="Game Page/Styles/Addand_Footer.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Sriracha&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body class="Addand_Body">
+
+  <script src="Game Page/Javascript/game.js"></script>
+
+  <header> 
+        
+    <a href="AddandTopup_TH.html" class="Addand_Logo">
+      <img src="Game Page/รูป/Logo png.png" class="Addand_Logo">
+    </a>
+    
+    <div class="Addand_HeaderM">
+      <input type="text" class="Addand_Search" id="searchBar" placeholder="ค้นหาเกมที่ต้องการเติม" oninput="showSuggestions()" onkeydown="handleKey(event)">
+      <button class="Addand_SearchButton" onclick="searchGame()"> 
+        <img src="Game Page/รูป/search icon.png" class="Search_Icon">
+      </button>
+      <div class="AddAnd_Suggestions" id="AddAnd_Suggestions"></div>
+    </div>
+
+    <nav class="Addand_Navigator">
+      <div class="Addand_menu-toggle" onclick="Addand_toggleMenu()">
+        <span id="Addand_menu-icon">☰</span>
+      </div>
+
+      <ul id="Addand_menu">
+        <li><a href="AddandTopup_TH.html" class="Addand_NavigatorText">หน้าแรก</a></li>
+        <li><a href="Addand_Info_TH.html" class="Addand_NavigatorText">สอบถาม/ติดต่อ</a></li>
+        <li><a href="Addand_Alert_TH.html" class="Addand_NavigatorText">ประกาศสำคัญ</a></li>
+        <li><a href="Addand_About_TH.html" class="Addand_NavigatorText">เกี่ยวกับ</a></li>
+       </ul>
+      
+    </nav>
+
+
+  </header>
+
+  <!-- ส่วนเกม -->
+
+  <img src="Game Page/รูป/หน้าปก.png" class="Addand_หน้าปก">
+
+  <div class="Addand_Popup-ad5_12" id="leftAd">
+    <button class="close-btn" onclick="closeAd('leftAd')">&times;</button>
+    <a href="#" id="leftAdLink"  target="_blank">
+      <img id="leftAdImage" src="" alt="Left Ad">
+    </a>
+  </div>
+
+  <div class="Addand_Popup-ad5_12" id="rightAd">
+    <button class="close-btn" onclick="closeAd('rightAd')">&times;</button>
+    <a href="#" id="rightAdLink"  target="_blank">
+      <img id="rightAdImage" src="" alt="Right Ad">
+    </a>
+  </div>
+
+  
+  <!-- ฉากหลังมืด -->
+  <div class="Addand_MidPopup-overlay" id="Addand_MidPopupOverlay" onclick="closePopup()"></div>
+
+  <!-- ตัว Pop-up -->
+  <div class="Addand_MidPopup" id="Addand_MidPopupBox">
+    <span class="Addand_MidPopup-close" onclick="closePopup()">X</span>
+    <a id="Addand_PopupLink" target="_blank">
+      <img id="Addand_PopupImage" src="" alt="โฆษณา">
+    </a>
+  </div>
+
+  <!-- ฉากหลังมืด แท็บใหม่ -->
+  <div class="Addand_MidPopup-overlay" id="Addand_MidPopupOverlay2" onclick="closePopup2()"></div>
+
+  <!-- ตัว Pop-up แท็บใหม่ -->
+  <div class="Addand_MidPopup" id="Addand_MidPopupBox2">
+    <span class="Addand_MidPopup-close" onclick="closePopup2()">X</span>
+    <a id="Addand_PopupLink2" target="_blank">
+      <img id="Addand_PopupImage2" src="" alt="โฆษณา">
+    </a>
+  </div>
+
+  <div class="Addand_GameBody">
+
+    <div class="Addand_GameHeader">
+      <p class="Addand_GameTitle">
+        Call of Duty Warzone Mobile
+      </p>
+      <img src="Game Page/รูป/Icon เกม/Call of Duty Mobile Icon.png" class="Addand_GameIcon2">
+    </div>
+  
+
+    <div class="Addand_GamePrice">
+
+      <div class="Addand_G-SheetContainer">
+
+        <iframe src="https://docs.google.com/spreadsheets/d/1vRdqJp_2dsZ42weLmBVHiwusL6MBpIjR8gwP40Uf2dc/edit?usp=sharing" allowfullscreen class="Addand_GoogleSheet" style="aspect-ratio: 3/4;"></iframe>
+
+        <p class="Addand_Note"> 
+          * Update ล่าสุด: 5 ธันวาคม 2567 *<br>
+          สามารถกด link เพื่อเช็คใน Google Sheet ได้โดยตรง 
+          <a href="https://docs.google.com/spreadsheets/d/1vRdqJp_2dsZ42weLmBVHiwusL6MBpIjR8gwP40Uf2dc/edit?usp=sharing" target="_blank"> กดฉันสิ</a><br>
+          * ราคาอาจมีการเปลี่ยนแปลง สอบถามแอดมินก่อนเติมเงินนะจ๊ะ *<br>
+        </p>
+
+      </div>
+
+      <div class="Addand_PriceList">
+
+        <p class="Addand_PriceTitle">
+          เติมโดยใช้ Email-PASS
+        </p>
+
+        <div class="Addand_PriceBox">
+          <p class="Addand_List">💰 100 COD Point</p>
+          <p class="Addand_Price">32 บาท</p>
+        </div>
+
+        <div class="Addand_PriceBox">
+          <p class="Addand_List">💰 500 COD Point</p>
+          <p class="Addand_Price">130 บาท</p>
+        </div>
+
+        <div class="Addand_PriceBox">
+          <p class="Addand_List">💰 1,100 COD Point</p>
+          <p class="Addand_Price">260 บาท</p>
+        </div>
+
+        <div class="Addand_PriceBox">
+          <p class="Addand_List">💰 2,400 COD Point</p>
+          <p class="Addand_Price">520 บาท</p>
+        </div>
+
+        <div class="Addand_PriceBox">
+          <p class="Addand_List">💰 5,000 COD Point</p>
+          <p class="Addand_Price">1,040 บาท</p>
+        </div>
+
+        <div class="Addand_PriceBox">
+          <p class="Addand_List">💰 13,000 COD Point</p>
+          <p class="Addand_Price">2,580 บาท</p>
+        </div>
+
+        <p class="Addand_PriceTitle">
+          * แพ็คขายดี *
+        </p>
+
+        <div class="Addand_PriceBox">
+          <p class="Addand_List">🎫 Blackcell</p>
+          <p class="Addand_Price">780 บาท</p>
+        </div>
+     
+      </div>
+
+    </div>
+
+    <div class="Addand_AdsGrid">
+        
+      <a href="https://www.facebook.com/gssspotted" target="_blank">
+        <img src="Game Page/รูป/Fake Ads/Fake-Ads-Arthur-1.gif" class="Addand_Ads">
+      </a>
+
+      <a href="https://www.facebook.com/lightfuryth" target="_blank">
+        <img src="Game Page/รูป/Fake Ads/Fake-Ads-LF1.gif" class="Addand_Ads">
+      </a>
+
+      <a href="https://www.facebook.com/FightMikasaGaming" target="_blank">
+        <img src="Game Page/รูป/Fake Ads/Fake-Ads-Fight-1.gif" class="Addand_Ads">
+      </a>
+
+      <a href="https://www.facebook.com/takluz" target="_blank">
+        <img src="Game Page/รูป/Fake Ads/Fake-Ads-Gift-1.gif" class="Addand_Ads">
+      </a>
+
+      <a href="https://www.facebook.com/bounglengame" target="_blank">
+        <img src="Game Page/รูป/Fake Ads/Fake-Ads-Boung-1.gif" class="Addand_Ads">
+      </a>
+
+      <a href="https://www.facebook.com/23savageDotA" target="_blank">
+        <img src="Game Page/รูป/Fake Ads/Fake-Ads-Tree23-1.gif" class="Addand_Ads">
+      </a>
+
+    </div>
+  
+
+  </div>
+
+  <footer>
+    <div class="Addand_container">
+      <div class="Addand_logo2">
+        <img src="Game Page/รูป/Logo png.png" >
+        <p style="margin-top: 0; margin-bottom: 10px;">บริษัท จื๋อฝูจิ่วเทียน จำกัด</p>
+        <p style="margin-top: 0; margin-bottom: 10px;">586/1 ถนนจันทน์ แขวงทุ่งวัดดอน<br>เขตสาทร กรุงเทพมหานคร 10120</p>
+        <p style="margin-top: 0; margin-bottom: 10px;">© 2024 - 2025</p>
+      </div>
+      
+      <div class="Addand_Info">
+        <p style="font-size: 40px; font-family: madeinchina; margin-top: 0; margin-bottom: 20px;">Addand Topup</p>
+        <p style="font-size: 18px;">
+          ร้านเติมเกม ทั้งเกมมือถือและเกม PC ที่ทั้ง เติมเร็ว ได้ไว<br>
+          เวลาเปิด 9 โมงเช้า - ตี 2<br>
+          ถูก สะดวก ปลอดภัย streamer การันตี 300%!!!<br>
+          สามารถสอบถาม rate ราคาเกมที่สนใจเติม ผ่านทาง inbox เพจได้เลย<br>
+        </p>
+      </div>
+
+      <!-- <div class="Addand_contact">
+        <h4>ติดต่อเรา</h4>
+        <p>📍 ที่อยู่: 586/1 ถนนจันทน์ แขวงทุ่งวัดดอน<br>เขตสาทร กรุงเทพมหานคร 10120</p>
+        <p>📞 โทร: 081-234-5678</p>
+        <p>✉️ อีเมล: contact@email.com</p>
+      </div> -->
+
+      <div class="Addand_social">
+        <h4>ติดตามเรา</h4>
+        <a href="https://www.facebook.com/AddandTopup" target="_blank">Facebook: AddandTopup</a>
+        <a href="https://lin.ee/ybGRXHy" target="_blank">Line: @ADDANDTOPUP</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

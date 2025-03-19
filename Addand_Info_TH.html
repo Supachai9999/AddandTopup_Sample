@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="th">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@& สอบถาม/ติดต่อ</title>
+  <link rel="stylesheet" href="Game Page/Styles/Addand_Game.css">
+  <link rel="stylesheet" href="Game Page/Styles/Addand_General.css">
+  <link rel="stylesheet" href="Game Page/Styles/Addand_Header.css">
+  <link rel="stylesheet" href="Game Page/Styles/Addand_Footer.css">
+  <link rel="stylesheet" href="Game Page/Styles/Game Page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Sriracha&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="Addand_Body">
+
+  <script src="Game Page/Javascript/main.js"></script>
+
+  <header> 
+        
+    <a href="AddandTopup_TH.html" class="Addand_Logo">
+      <img src="Game Page/รูป/Logo png.png" class="Addand_Logo">
+    </a>
+    
+    <div class="Addand_HeaderM">
+      <input type="text" class="Addand_Search" id="searchBar" placeholder="ค้นหาเกมที่ต้องการเติม" oninput="showSuggestions()" onkeydown="handleKey(event)">
+      <button class="Addand_SearchButton" onclick="searchGame()"> 
+        <img src="Game Page/รูป/search icon.png" class="Search_Icon">
+      </button>
+      <div class="AddAnd_Suggestions" id="AddAnd_Suggestions"></div>
+    </div>
+    
+
+    <nav class="Addand_Navigator">
+
+      <div class="Addand_menu-toggle" onclick="Addand_toggleMenu()">
+        <span id="Addand_menu-icon">☰</span>
+      </div>
+
+      <ul id="Addand_menu">
+        <li><a href="AddandTopup_TH.html" class="Addand_NavigatorText">หน้าแรก</a></li>
+        <li><a href="Addand_Info_TH.html" class="Addand_NavigatorText">สอบถาม/ติดต่อ</a></li>
+        <li><a href="Addand_Alert_TH.html" class="Addand_NavigatorText">ประกาศสำคัญ</a></li>
+        <li><a href="Addand_About_TH.html" class="Addand_NavigatorText">เกี่ยวกับ</a></li>
+       </ul>
+      
+    </nav>
+
+
+  </header>
+
+  <img src="Game Page/รูป/หน้าปก.png" class="Addand_หน้าปก">
+
+  <div class="Addand_Popup-ad5_12" id="leftAd">
+    <button class="close-btn" onclick="closeAd('leftAd')">&times;</button>
+    <a href="#" id="leftAdLink" target="_blank">
+      <img id="leftAdImage" src="" alt="Left Ad">
+    </a>
+  </div>
+
+  <div class="Addand_Popup-ad5_12" id="rightAd">
+    <button class="close-btn" onclick="closeAd('rightAd')">&times;</button>
+    <a href="#" id="rightAdLink" target="_blank">
+      <img id="rightAdImage" src="" alt="Right Ad">
+    </a>
+  </div>
+
+  
+  <!-- ฉากหลังมืด -->
+  <div class="Addand_MidPopup-overlay" id="Addand_MidPopupOverlay" onclick="closePopup()"></div>
+
+  <!-- ตัว Pop-up -->
+  <div class="Addand_MidPopup" id="Addand_MidPopupBox">
+    <span class="Addand_MidPopup-close" onclick="closePopup()">X</span>
+    <a id="Addand_PopupLink" target="_blank">
+      <img id="Addand_PopupImage" src="" alt="โฆษณา">
+    </a>
+  </div>
+
+  <!-- ฉากหลังมืด แท็บใหม่ -->
+  <div class="Addand_MidPopup-overlay" id="Addand_MidPopupOverlay2" onclick="closePopup2()"></div>
+
+  <!-- ตัว Pop-up แท็บใหม่ -->
+  <div class="Addand_MidPopup" id="Addand_MidPopupBox2">
+    <span class="Addand_MidPopup-close" onclick="closePopup2()">X</span>
+    <a id="Addand_PopupLink2" target="_blank">
+      <img id="Addand_PopupImage2" src="" alt="โฆษณา">
+    </a>
+  </div>
+
+  <div class="Addand_Mid">
+
+    <p class="Addand_Header"> 
+      Addand Topup
+     </p>
+
+    <p class="Addand_CoHeader"> 
+      สอบถาม / เติมเกม
+    </p>
+
+    <div class="Addand_Grid2C">
+
+      <img src="Game Page/รูป/สอบถาม_เติมเกม/บัญชีธนาคาร.png" class="Addand_InfoPic">
+
+      <div>
+        <p class="Addand_InfoTitle"> 
+          สามารถกดภาพเข้าไปสอบถามรายละเอียดได้ที่
+        </p>
+
+        <div class="Addand_InfoTitle"> 
+          <a onclick="openPopup2('https://www.facebook.com/AddandTopup')" target="_blank">Facebook: AddandTopup</a>
+        </div>
+        <a onclick="openPopup2('https://www.facebook.com/AddandTopup')" target="_blank">       
+          <img src="Game Page/รูป/สอบถาม_เติมเกม/Contact Facebook.png" class="Addand_InfoPic">
+        </a> 
+        
+        <div class="Addand_InfoTitle"> 
+          <a onclick="openPopup2('https://lin.ee/ybGRXHy')" target="_blank">Line: @ADDANDTOPUP</a>
+        </div>
+        <a onclick="openPopup2('https://lin.ee/ybGRXHy')" target="_blank">
+          <img src="Game Page/รูป/สอบถาม_เติมเกม/Contact Line.png" class="Addand_InfoPic">
+        </a>    
+        
+
+      </div>     
+
+
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="Addand_container">
+      <div class="Addand_logo2">
+        <img src="Game Page/รูป/Logo png.png" >
+        <p style="margin-top: 0; margin-bottom: 10px;">บริษัท จื๋อฝูจิ่วเทียน จำกัด</p>
+        <p style="margin-top: 0; margin-bottom: 10px;">586/1 ถนนจันทน์ แขวงทุ่งวัดดอน<br>เขตสาทร กรุงเทพมหานคร 10120</p>
+        <p style="margin-top: 0; margin-bottom: 10px;">© 2024 - 2025</p>
+      </div>
+      
+      <div class="Addand_Info">
+        <p style="font-size: 40px; font-family: madeinchina; margin-top: 0; margin-bottom: 20px;">Addand Topup</p>
+        <p style="font-size: 18px;">
+          ร้านเติมเกม ทั้งเกมมือถือและเกม PC ที่ทั้ง เติมเร็ว ได้ไว<br>
+          เวลาเปิด 9 โมงเช้า - ตี 2<br>
+          ถูก สะดวก ปลอดภัย streamer การันตี 300%!!!<br>
+          สามารถสอบถาม rate ราคาเกมที่สนใจเติม ผ่านทาง inbox เพจได้เลย<br>
+        </p>
+      </div>
+
+      <!-- <div class="Addand_contact">
+        <h4>ติดต่อเรา</h4>
+        <p>📍 ที่อยู่: 586/1 ถนนจันทน์ แขวงทุ่งวัดดอน<br>เขตสาทร กรุงเทพมหานคร 10120</p>
+        <p>📞 โทร: 081-234-5678</p>
+        <p>✉️ อีเมล: contact@email.com</p>
+      </div> -->
+
+      <div class="Addand_social">
+        <h4>ติดตามเรา</h4>
+        <a href="https://www.facebook.com/AddandTopup" target="_blank">Facebook: AddandTopup</a>
+        <a href="https://lin.ee/ybGRXHy" target="_blank">Line: @ADDANDTOPUP</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
+

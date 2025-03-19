@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="th">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addand Topup</title>
+  <link rel="stylesheet" href="Game Page/Styles/Addand_Game.css">
+  <link rel="stylesheet" href="Game Page/Styles/Addand_General.css">
+  <link rel="stylesheet" href="Game Page/Styles/Addand_Header.css">
+  <link rel="stylesheet" href="Game Page/Styles/Addand_Footer.css">
+  <link rel="stylesheet" href="Game Page/Styles/Game Page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Sriracha&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="Addand_Body">
+
+  <script src="Game Page/Javascript/main.js"></script>
+
+  <header> 
+    
+    <a href="AddandTopup_TH.html" class="Addand_Logo">
+      <img src="Game Page/รูป/Logo png.png" class="Addand_Logo">
+    </a>
+
+    <div class="Addand_HeaderM">
+      <input type="text" class="Addand_Search" id="searchBar" placeholder="ค้นหาเกมที่ต้องการเติม" oninput="showSuggestions()" onkeydown="handleKey(event)">
+      <button class="Addand_SearchButton" onclick="searchGame()"> 
+        <img src="Game Page/รูป/search icon.png" class="Search_Icon">
+      </button>
+      <div class="AddAnd_Suggestions" id="AddAnd_Suggestions"></div>
+    </div>
+    
+    <nav class="Addand_Navigator">
+      <div class="Addand_menu-toggle" onclick="Addand_toggleMenu()">
+        <span id="Addand_menu-icon">☰</span>
+      </div>
+
+      <ul id="Addand_menu">
+        <li><a href="AddandTopup_TH.html" class="Addand_NavigatorText">หน้าแรก</a></li>
+        <li><a href="Addand_Info_TH.html" class="Addand_NavigatorText">สอบถาม/ติดต่อ</a></li>
+        <li><a href="Addand_Alert_TH.html" class="Addand_NavigatorText">ประกาศสำคัญ</a></li>
+        <li><a href="Addand_About_TH.html" class="Addand_NavigatorText">เกี่ยวกับ</a></li>
+       </ul>
+      
+    </nav>
+
+
+  </header>
+
+  <img src="Game Page/รูป/หน้าปก.png" class="Addand_หน้าปก">
+
+  <div class="Addand_Popup-ad5_12" id="leftAd">
+    <button class="close-btn" onclick="closeAd('leftAd')">&times;</button>
+    <a href="#" id="leftAdLink" target="_blank">
+      <img id="leftAdImage" src="" alt="Left Ad">
+    </a>
+  </div>
+
+  <div class="Addand_Popup-ad5_12" id="rightAd">
+    <button class="close-btn" onclick="closeAd('rightAd')">&times;</button>
+    <a href="#" id="rightAdLink" target="_blank">
+      <img id="rightAdImage" src="" alt="Right Ad">
+    </a>
+  </div>
+
+  
+  <!-- ฉากหลังมืด -->
+  <div class="Addand_MidPopup-overlay" id="Addand_MidPopupOverlay" onclick="closePopup()"></div>
+
+  <!-- ตัว Pop-up -->
+  <div class="Addand_MidPopup" id="Addand_MidPopupBox">
+    <span class="Addand_MidPopup-close" onclick="closePopup()">X</span>
+    <a id="Addand_PopupLink" target="_blank">
+      <img id="Addand_PopupImage" src="" alt="โฆษณา">
+    </a>
+  </div>
+
+  <!-- ฉากหลังมืด แท็บใหม่ -->
+  <div class="Addand_MidPopup-overlay" id="Addand_MidPopupOverlay2" onclick="closePopup2()"></div>
+
+  <!-- ตัว Pop-up แท็บใหม่ -->
+  <div class="Addand_MidPopup" id="Addand_MidPopupBox2">
+    <span class="Addand_MidPopup-close" onclick="closePopup2()">X</span>
+    <a id="Addand_PopupLink2" target="_blank">
+      <img id="Addand_PopupImage2" src="" alt="โฆษณา">
+    </a>
+  </div>
+
+  <div class="Addand_Mid">
+
+      
+      <p class="Addand_Header"> 
+        Addand Topup
+       </p>
+
+      <p class="Addand_CoHeader"> 
+        เว็บเติมเงิน เกมมือถือ เกมคอม เติมเร็ว ได้ไว ไม่ต้องรอนาน
+      </p>
+
+      <p class="Addand_CocoHeader"> 
+        ลิงค์ราคาเกม สำหรับลูกค้าที่ต้องการตรวจสอบราคาแพ็คของเกมต่างๆ
+      </p>
+
+      <div class="Addand_AdsGrid">
+        
+        <a href="https://www.facebook.com/gssspotted" target="_blank">
+          <img src="Game Page/รูป/Fake Ads/Fake-Ads-Arthur-1.gif" class="Addand_Ads">
+        </a>
+        
+        <a href="https://www.facebook.com/lightfuryth" target="_blank">
+          <img src="Game Page/รูป/Fake Ads/Fake-Ads-LF1.gif" class="Addand_Ads">
+        </a>
+
+        <a href="https://www.facebook.com/FightMikasaGaming" target="_blank">
+          <img src="Game Page/รูป/Fake Ads/Fake-Ads-Fight-1.gif" class="Addand_Ads">
+        </a>
+
+        <a href="https://www.facebook.com/takluz" target="_blank">
+          <img src="Game Page/รูป/Fake Ads/Fake-Ads-Gift-1.gif" class="Addand_Ads">
+        </a>
+        
+        <a href="https://www.facebook.com/bounglengame" target="_blank">
+          <img src="Game Page/รูป/Fake Ads/Fake-Ads-Boung-1.gif" class="Addand_Ads">
+        </a>
+        
+        <a href="https://www.facebook.com/23savageDotA" target="_blank">
+          <img src="Game Page/รูป/Fake Ads/Fake-Ads-Tree23-1.gif" class="Addand_Ads">
+        </a>
+        
+      </div>
+
+           
+      <!-- ---------------------------------------------------------------------------- -->
+      
+      <p class="Addand_Title"> 
+        เกมจากค่าย RIOT GAMES
+      </p>  
+
+      <div class="Addand_GameRow6">
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_League_Of_Legends_PC_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/League of Legends Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              League of Legends (PC)
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Teamfight_Tactics_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/TFT set 13 Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Teamfight Tactics (Mobile)
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Valorant_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Valorant Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Valorant
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_LOL_Wild_Rift_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/LOL WR Arcane Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              LOL: Wild Rift (Mobile)
+            </p>
+          </div>
+        </div>
+        
+        <div class="Addand_GameBox">
+          <img src="Game Page/รูป/Icon เกม/Golden Spatula Icon.jpg" class="Addand_GameIcon">
+        
+          <p class="Addand_GameName"> 
+            Golden Spatula (Mobile) <underlin>ยังไม่มี</underlin>
+          </p>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Legends_of_Runeterra_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/League of Runeterra.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Legends of Runeterra
+            </p>
+            </div>
+        </div>
+          
+      </div>
+
+      <p class="Addand_Title"> 
+        เกมจากค่าย HOYOVERSE
+      </p> 
+
+      <div class="Addand_GameRow3">
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Genshin_Impact_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Genshin Impact Icon.jpg" class="Addand_GameIcon">
+            
+            <p class="Addand_GameName"> 
+              Genshin Impact
+            </p>
+          </div>
+
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Honkai_Star_Rail_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Honkai Star Rail Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Honkai Star Rail
+            </p>
+          </div>  
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Zenless_Zone_Zero_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Zenless Zone Zero Icon.jpg" class="Addand_GameIcon">
+        
+            <p class="Addand_GameName"> 
+              Zenless Zone Zero
+            </p>
+          </div>
+        </div>
+          
+      </div>
+
+ 
+      
+      <p class="Addand_Title"> 
+        เกมดีๆ เเนะนำโดย LightFury
+      </p> 
+
+      <div class="Addand_GameRow6">
+
+        <div class="Addand_GameBox">
+          <a href="https://www.facebook.com/share/r/188Sv6niPX/" target="_blank">
+            <img src="Game Page/รูป/ผู้ลงทุน/LightFury.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              "ใครไม่เล่นนี่พลาด"
+            </p>
+          </a>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Blue_Archive_TH.html')" class="Addand_GamePage">
+          <img src="Game Page/รูป/Icon เกม/Blue Archive Icon.jpg" class="Addand_GameIcon">
+        
+          <p class="Addand_GameName"> 
+            Blue Archive
+          </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Blue_Archive_TH.html')" class="Addand_GamePage">
+          <img src="Game Page/รูป/Icon เกม/Blue Archive Icon.jpg" class="Addand_GameIcon">
+        
+          <p class="Addand_GameName"> 
+            Blue Archive
+          </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Blue_Archive_TH.html')" class="Addand_GamePage">
+          <img src="Game Page/รูป/Icon เกม/Blue Archive Icon.jpg" class="Addand_GameIcon">
+        
+          <p class="Addand_GameName"> 
+            Blue Archive
+          </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Blue_Archive_TH.html')" class="Addand_GamePage">
+          <img src="Game Page/รูป/Icon เกม/Blue Archive Icon.jpg" class="Addand_GameIcon">
+        
+          <p class="Addand_GameName"> 
+            Blue Archive
+          </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <a href="https://stellasora.global/" target="_blank">
+            <img src="Game Page/รูป/Icon เกม/Stella Sora Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Stella Sora
+            </p>
+          </a>
+        </div>
+          
+      </div>
+
+      <p class="Addand_Title"> 
+        เกมจากค่าย Garena
+      </p> 
+
+      <div class="Addand_GameRow4">
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Black_Clover_M_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Black Clover M Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Black Clover M
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Calll_of_Duty_Warzone_Mobile_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Call of Duty Mobile Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Call of Duty Warzone Mobile *
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Free_Fire_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Free Fire Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Free Fire
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_ROV_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/ROV Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              RoV
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="Addand_Title"> 
+        เกมที่มีโพสต์ราคาในเพจ Facebook
+      </p>  
+
+      <div class="Addand_GameFlex">
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Path_Of_Exile2_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Path of Exile 2 Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Path of Exile 2
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Wuthering_Waves_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Wuthering Waves Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Wuthering Waves
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_GIRLS_FRONTLINE_2_EXILIUM_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/GIRLS' FRONTLINE 2 EXILIUM Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              GIRLS' FRONTLINE 2: EXILIUM
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Infinity_Nikki_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Infinity Nikki Icon.png" class="Addand_GameIcon">
+        
+            <p class="Addand_GameName"> 
+              Infinity Nikki
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Roblox_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Roblox Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Roblox
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_AFK_Journey_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/AFK Journey Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              AFK Journey
+            </p>
+          </div>
+        </div>
+              
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Summoners_War_Sky_Arena_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Summoners War Sky Arena Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Summoners War: Sky Arena
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Marvel_Rivals_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Marvel Rival Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Marvel Rivals
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Arknights_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Arknights Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Arknights
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_STARSEED_Asnia_Trigger_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/STARSEED Asnia Trigger Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              STARSEED: Asnia Trigger
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Dragon_Nest_II_Evolution_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/dragon nest 2 evolution Icon.png" class="Addand_GameIcon">
+            
+            <p class="Addand_GameName"> 
+              Dragon Nest 2: evolution
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_FC_Mobile_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/FC Mobile Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              FC Mobile
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Mahjong_Soul_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Mahjong Soul Icon.jpg" class="Addand_GameIcon">
+        
+            <p class="Addand_GameName"> 
+              Mahjong Soul
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Sword_of_Convallaria_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Sword of Convallaria Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Sword of Convallaria
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Onmyoji_Arena_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Onmyoji Arena Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Onmyoji Arena
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Counter_Side_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Counterside Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Counter: Side
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Go_Go_Muffin_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Go Go Muffin Icon.jpg" class="Addand_GameIcon">
+        
+            <p class="Addand_GameName"> 
+              Go Go Muffin
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_Delta_Force_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Delta Force Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Delta Force
+            </p>
+          </div>
+        </div>
+        
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('Game_CookieRun_Tower_of_Adventures_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Cookie Run Tower of Adventures Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Cookie Run: Tower of Adventures
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="Addand_Title"> 
+        เกมที่มีอัพเดทราคาล่าสุดใน Google Drive
+      </p>  
+
+      <p class="Addand_Date"> 
+        อัพเดทล่าสุดจะมีบอกในเว็บหน้าเติมเกม
+      </p>  
+
+      <div class="Addand_GameFlex">
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_DDTank_Origin_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/DDTank Origin Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              DDTank Origin
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Dragon_Age_Pals_Adventure_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Dragon Age Pals Adventure Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Dragon Age: Pals Adventure
+            </p>
+          </div>
+        </div>      
+             
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Eggy_Party_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Eggy Party Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Eggy Party
+            </p>
+          </div>
+        </div>
+        
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_EverChes_15000_Chest_Giveaway_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/EverChest 15000 Chest Giveaway Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              EverChest: 15000 Chest Giveaway
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Jujutsu_Kaisen_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Jujutsu Kaisen Phantom Parade Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Jujutsu Kaisen: Phantom Parade
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_King_of_Avalon_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/King of Avalon Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              King of Avalon
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Last_War_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Last War Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Last War: Survival Game
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Legend_of_Mushroom_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Legend of Mushrooms Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Legend of Mushroom
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Love_and_Deepspace_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Love and Deepspace Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Love and Deepspace
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Luna_Origin_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Luna Origin Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+            Luna Origin
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Maplestory_M_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Maplestory M Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Maplestory M
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Moonlight_Sculptor_Dark_Gamer_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Moonlight Sculptor Dark Gamer Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Moonlight Sculptor: Dark Gamer
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_NIght_Crows_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Night Crows Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Night Crows
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_NIKKE_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/NIKKE Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              NIKKE
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Ragnarok_Landverse_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Ragnarok Landverse Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Ragnarok Landverse
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Reverse_1999_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Reverse 1999 Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Reverse 1999
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Samkok_Tactics_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Samkok Tactics Icon.png" class="Addand_GameIcon">
+        
+            <p class="Addand_GameName"> 
+              Samkok Tactics
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Seven_Knight_Idle_(7k_Idle)_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Seven Knight Idle Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Seven Knight Idle (7k Idle)
+            </p>
+          </div>
+        </div>
+      
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Solo_Leveling_Arise_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Solo Leveling Arise Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Solo Leveling: Arise
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Tower_of_God_Great_Journey_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Tower of God Great Journey Icon.jpg" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Tower of God: Great Journey
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_The_Legend_of_Heroes_Gagharv_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/The Legend of Heroes Gagharv Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              The Legend of Heroes: Gagharv
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_The_Seven_Deadly_Sins_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/The Seven Deadly Sins Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              The Seven Deadly Sins
+            </p>
+          </div>
+        </div>
+
+        <div class="Addand_GameBox">
+          <div onclick="openPopup('GameSh_Yulgang_TH.html')" class="Addand_GamePage">
+            <img src="Game Page/รูป/Icon เกม/Yulgang  Icon.png" class="Addand_GameIcon">
+          
+            <p class="Addand_GameName"> 
+              Yulgang: จุติยุทธภพเลือดใหม่
+            </p>
+          </div>
+        </div>
+              
+      </div>
+
+  </div>
+
+<!--   <div class="Addand_Bottom"> 
+    
+    <div class="Addand_LogoLogo">
+      <img src="Game Page/รูป/Logo png.png" class="Addand_Logo2" style="width: 100px; height: 100px;">
+      <p class="Addand_LogoLetter">Addand Topup</p>
+    </div>
+
+    <div class="Addand_BottomInfoLeft">
+      <p class="Addand_InfoTitle">
+        AddandTopup ซึ่งเกิดจากการร่วมทุนกันของเหล่า streamer "6 ภาคีใส่ใจ" <br>
+        (LightFuryLF, bounglengame,Takluz,23savage,Mikasa และ gssspotted) <br>
+        โดยคนเล่นเกม เพื่อคนเล่นเกม ขอกระโจนเข้าสู่วงการร้านเติมเกม
+      </p>
+
+      <div class="Addand_Policy">
+        <p class="Addand_PolicyWord"><u>นโยบายความเป็นส่วนตัว</u></p>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="Addand_HeaderM">
+      <input type="text" class="Addand_Search" placeholder="ค้นหาเกมที่ต้องการเติม">
+      <button class="Addand_SearchButton"> 
+        <img src="Game Page/รูป/search icon.png" class="Search_Icon">
+      </button>
+    </div>
+
+  </div>
+ -->
+
+
+  <footer>
+    <div class="Addand_container">
+      <div class="Addand_logo2">
+        <img src="Game Page/รูป/Logo png.png" >
+        <p style="margin-top: 0; margin-bottom: 10px;">บริษัท จื๋อฝูจิ่วเทียน จำกัด</p>
+        <p style="margin-top: 0; margin-bottom: 10px;">586/1 ถนนจันทน์ แขวงทุ่งวัดดอน<br>เขตสาทร กรุงเทพมหานคร 10120</p>
+        <p style="margin-top: 0; margin-bottom: 10px;">© 2024 - 2025</p>
+      </div>
+      
+      <div class="Addand_Info">
+        <p style="font-size: 40px; font-family: madeinchina; margin-top: 0; margin-bottom: 20px;">Addand Topup</p>
+        <p style="font-size: 18px;">
+          ร้านเติมเกม ทั้งเกมมือถือและเกม PC ที่ทั้ง เติมเร็ว ได้ไว<br>
+          เวลาเปิด 9 โมงเช้า - ตี 2<br>
+          ถูก สะดวก ปลอดภัย streamer การันตี 300%!!!<br>
+          สามารถสอบถาม rate ราคาเกมที่สนใจเติม ผ่านทาง inbox เพจได้เลย<br>
+        </p>
+      </div>
+
+      <!-- <div class="Addand_contact">
+        <h4>ติดต่อเรา</h4>
+        <p>📍 ที่อยู่: 586/1 ถนนจันทน์ แขวงทุ่งวัดดอน<br>เขตสาทร กรุงเทพมหานคร 10120</p>
+        <p>📞 โทร: 081-234-5678</p>
+        <p>✉️ อีเมล: contact@email.com</p>
+      </div> -->
+
+      <div class="Addand_social">
+        <h4>ติดตามเรา</h4>
+        <a href="https://www.facebook.com/AddandTopup" target="_blank">Facebook: AddandTopup</a>
+        <a href="https://lin.ee/ybGRXHy" target="_blank">Line: @ADDANDTOPUP</a>
+      </div>
+    </div>
+  </footer>
+
+  
+  
+
+</body>
+
+
+</html>
