@@ -1,0 +1,90 @@
+footer {
+  background: #222;
+  color: white;
+  padding: 40px 0px;
+  margin-top: 60px;
+  margin-bottom: -10px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-family: Paobunjin;
+}
+
+.Addand_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+/*   max-width: 1200px; */
+  margin: auto;
+  align-items: center;
+}
+
+.Addand_logo2{
+  margin: auto 0px;
+  flex: 1;
+  justify-content: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.Addand_logo2 img {
+  width: 120px;
+}
+
+.Addand_contact, .Addand_social {
+  margin: 10px;
+  flex: 1;
+  font-family: Paobunjin;
+}
+
+.Addand_Info {
+  height: 100%;
+  margin: 10px;
+  flex: 2;
+  font-family: Paobunjin;
+  align-items: center;
+}
+
+.Addand_contact h4, .Addand_social h4 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.Addand_contact p{
+  font-size: 18px;
+}
+
+.Addand_Info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Addand_Info ul li {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.Addand_social a {
+  display: block;
+  margin: 5px 0;
+  color: white;
+  text-decoration: underline;
+  font-size: 18px;
+  transition: color 0.25s;
+}
+
+.Addand_social a:hover {
+  cursor: pointer;
+  color: hsl(53, 100%, 50%);
+}
+
+.Addand_social a:active {
+  cursor: pointer;
+  color: hsl(53, 100%, 41%);
+}
+
+@media (max-width: 768px) {
+  .Addand_container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
