@@ -1,0 +1,272 @@
+header {
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  position: fixed;
+  padding-left: 2%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: hsl(358, 100%, 29%);
+}
+
+.Addand_Logo img{
+  width: 48px;
+  height: 48px; 
+  margin-top: 2px;
+  margin-right: 10px;
+/*   object-position: middle; */
+  flex-shrink: 0;
+}
+
+.Addand_HeaderM {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 550px;
+}
+
+.Addand_Search {
+  background-color: hsl(358, 100%, 85%);
+  color: hsl(0, 0%, 0%);
+  font-family: madeinchina, Paobunjin;
+  font-size: 24px;
+  font-weight: 450;
+  letter-spacing: 1.5px;
+  width: 100%;
+  min-width: 185px;
+  max-width: 500px;
+  height: 36px;
+  border: 1px solid hsl(0, 100%, 22%);
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin-left: 15%; */
+  padding-left: 16px;
+  z-index: 1102;
+/*   box-shadow: inset 0px 1px 2px hsl(0, 100%, 80%); */
+}
+
+.Addand_Search::placeholder {
+  color: hsl(0, 0%, 0%);
+  font-family: madeinchina, Paobunjin;
+}
+
+.Addand_SearchButton {
+  background-color: hsl(0, 100%, 80%);
+  height: 39px;
+  width: 50px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: hsl(0, 100%, 22%);
+  margin-left: -2px;
+  margin-right: 10px;
+  transition: background-color 0.25s;
+  z-index: 1103;
+}
+
+.AddAnd_Suggestions {
+  position: absolute;
+  margin-top: -10px;
+  top: 100%;
+  width: 95%;
+  left: 0;
+  right: 0;
+  font-family: madeinchina, Paobunjin;
+  font-size: 24px;
+  font-weight: 450;
+  letter-spacing: 1.5px;
+  background-color: hsl(0, 100%, 87%);
+  border: 1px solid hsl(0, 100%, 22%);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+  z-index: 1101;
+}
+.AddAnd_Suggestions div {
+  padding: 10px;
+  cursor: pointer;
+}
+.AddAnd_Suggestions div:hover, .AddAnd_Suggestions .active {
+  background-color: hsl(0, 100%, 72%);
+}
+.no-result {
+  padding: 10px;
+  color: #888;
+  cursor: default;
+}
+
+.Search_Icon  {
+  height: 25px;
+  margin-top: 4px;
+}
+
+
+.Addand_SearchButton:hover {
+  cursor: pointer;
+  background-color: hsl(0, 100%, 70%);
+}
+
+.Addand_SearchButton:active {
+  background-color: hsl(0, 65%, 35%);
+}
+
+/* ________________________________________ */
+
+.Addand_Navigator {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  font-family: Paobunjin;
+}
+
+.Addand_NavigatorText {
+  padding: 0 10px;
+  font-family: Paobunjin;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+.Addand_menu-toggle {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  margin-left: 2%;
+}
+
+#Addand_menu {
+  list-style: none;
+  display: flex;
+  margin-left: 2%;
+  min-width: 420px;
+  padding: 0;
+  z-index: 1200;
+}
+
+#Addand_menu li {
+  margin: 0 5px;
+}
+
+#Addand_menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.25s;
+}
+
+#Addand_menu a:hover {
+  cursor: pointer;
+  color: hsl(53, 100%, 50%);
+}
+
+#Addand_menu a:activer {
+  cursor: pointer;
+  color: hsl(53, 100%, 41%);
+}
+
+/* 🌟 เมื่อหน้าจอเล็กซ่อนเมนู */
+
+@media screen and (max-width: 768px) {
+
+  .Addand_Logo img{
+    width: 44px;
+    height: 44px; 
+  }
+
+  .Addand_menu-toggle {
+      display: block;
+  }
+
+  #Addand_menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 32.5px;
+      left: -75px;
+      width: auto;
+      min-width: 60px;
+      background-color: #812020;
+      text-align: center;
+  }
+
+  #Addand_menu li {
+      margin: 15px 0;
+  }
+
+  #Addand_menu.show {
+      display: flex;
+      width: max-content;
+      align-content: end;
+      margin-right: 50px;
+  }
+}
+
+/*________________*/
+
+
+
+.Addand_หน้าปก {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 25px;
+}
+
+.Addand_Header {
+  font-family: Lyf_mulan;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  text-align: center;
+  color: hsl(53, 100%, 50%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .Addand_Search{
+    font-size: 16px;
+    min-width: 135px;
+  }
+  .Addand_Header {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .Addand_Search{
+    font-size: 18px;
+    min-width: 155px;
+  }
+  .Addand_Header {
+    font-size: 56px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 949px) {
+  .Addand_Search{
+    font-size: 18px;
+  }
+  .Addand_Header {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 950px) {
+  .Addand_Header {
+    font-size: 100px;
+  }
+}

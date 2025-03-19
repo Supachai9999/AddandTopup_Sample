@@ -1,0 +1,341 @@
+.Addand_Body {
+  padding-top: 60px;
+  background-color: hsl(358, 71%, 47%);
+  font-family: madeinchina, paobunjin, Roboto;
+  letter-spacing: 0.05em;
+}
+
+/* ส่วนหัวของเกม */
+
+.Addand_GameBody {
+  margin: 20px 10% 0 10%;
+  /* background-color: hsl(358, 100%, 82%); */
+}
+
+.Addand_GameHeader {
+  padding: 20px 0;
+  height: 100%;
+  display: grid;
+  font-family: madeinchina, paobunjin, Roboto;
+  font-size: 48px;
+  font-weight: bold;
+  color: hsl(53, 100%, 50%);
+  /* background-color: hsl(294, 100%, 69%); */
+  grid-template-columns: 4fr 1fr;
+  column-gap: 1%;
+  row-gap: 16px;
+}
+
+.Addand_GameTitle {
+  font-family: madeinchina, paobunjin, Roboto;
+  font-size: 60px;
+  font-weight: bold;
+  color: hsl(53, 100%, 50%);
+  margin-top: auto;
+  margin-left: 0;
+  margin-bottom: auto;
+  /* background-color: aquamarine; */
+}
+
+.Addand_GameIcon2 {
+  width: 100%;
+  max-width: 150px;
+  object-fit: contain;
+  object-position: top;
+  box-shadow: hsl(46, 100%, 66%) 0px 0px 16px;
+  size-adjust: flex;
+/*   background-color: hsl(101, 100%, 64%); */
+  justify-self: right;
+}
+
+@media (max-width: 468px) {
+  .Addand_GameTitle  {
+    font-size: 28px;
+  }
+  .Addand_GameIcon2 {
+    border-radius: 18px;
+    min-width: 60px;
+  }
+}
+
+@media (min-width: 468.00001px) and (max-width: 600px) {
+  .Addand_GameTitle  {
+    font-size: 36px;
+  }
+  .Addand_GameIcon2 {
+    border-radius: 21px;
+    min-width: 100px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .Addand_GameTitle  {
+    font-size: 48px;
+  }
+  .Addand_GameIcon2 {
+    border-radius: 32px;
+    min-width: 120px;
+  }
+}
+
+@media (min-width: 900px) {
+  .Addand_GameTitle  {
+    font-size: 60px;
+  }
+  .Addand_GameIcon2 {
+    border-radius: 40px;
+  }
+}
+
+/* ส่วนเกม */
+
+.Addand_GamePrice {
+  display: grid;
+  margin-top: 20px;
+}
+
+/* Facebook & Google Sheet */
+
+.Addand_Facebook {
+  position: relative;
+  width: 100%; /* ปรับให้แสดงเต็มความกว้างของ container */
+  aspect-ratio: 1/1;
+  /* max-width: 800px; */ /* ตั้งค่าความกว้างสูงสุดตามต้องการ */
+  /* background-color: aqua; */
+  margin: 0px;
+}
+
+.Addand_G-SheetContainer {
+  position: relative;
+  width: 100%; /* ปรับให้แสดงเต็มความกว้างของ container */
+  /* max-width: 800px; */ /* ตั้งค่าความกว้างสูงสุดตามต้องการ */
+  /* background-color: aqua; */
+  margin: auto;
+  vertical-align: top;
+}
+
+.Addand_GoogleSheet {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.Addand_PriceList {
+  width: 100%;
+  height: 100%;
+  color: hsl(53, 100%, 50%);
+}
+
+@media (max-width: 640px) {
+  .Addand_GamePrice {
+    display: grid;
+    grid: inherit;
+    row-gap: 20px;
+  }
+  .Addand_Facebook {
+    position: relative; /* ปรับให้แสดงเต็มความกว้างของ container */
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    max-width: 600px; /* ตั้งค่าความกว้างสูงสุดตามต้องการ */
+    margin: auto;
+    vertical-align: top;
+  }
+  .Addand_G-SheetContainer {
+    position: relative;
+    width: 100%; /* ปรับให้แสดงเต็มความกว้างของ container */
+    /* max-width: 800px; */ /* ตั้งค่าความกว้างสูงสุดตามต้องการ */
+    /* background-color: aqua; */
+    aspect-ratio: 9/16;
+    margin: auto;
+    vertical-align: top;
+  }
+}
+
+
+
+@media (min-width: 640.00001px) and (max-width: 1000px) {
+  .Addand_GamePrice {
+    display: grid;
+    grid: inherit;
+    row-gap: 20px;
+  }
+  .Addand_Facebook {
+    position: relative; /* ปรับให้แสดงเต็มความกว้างของ container */
+    aspect-ratio: 1/1;
+    max-width: 600px; /* ตั้งค่าความกว้างสูงสุดตามต้องการ */
+    margin: auto;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 1000.0000001px) {
+  .Addand_GamePrice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+  .Addand_Facebook {
+    width: 100%; /* ปรับให้แสดงเต็มความกว้างของ container */
+    max-width: 800px; /* ตั้งค่าความกว้างสูงสุดตามต้องการ */
+    vertical-align: top;
+    margin-top: 25.5px;
+  }
+
+  .Addand_G-SheetContainer {
+    position: relative;
+    width: 100%; /* ปรับให้แสดงเต็มความกว้างของ container */
+    /* max-width: 800px; */ /* ตั้งค่าความกว้างสูงสุดตามต้องการ */
+    /* background-color: aqua; */
+    vertical-align: top;
+    margin-top: 25.5px;
+  }
+}
+
+
+/* ส่วนราคาแพ็ค  */
+
+.Addand_PriceTitle{
+  width: fit-content;
+  font-family: paobunjin, Roboto;
+  border: 2.5px solid hsl(358, 93%, 17%);
+  border-radius: 10px;
+  background-color: hsl(53, 100%, 50%);
+  color: darkred;
+  font-weight: 600;
+}
+
+.Addand_PriceBox {
+  display: flex;
+  margin: 5px 0;
+  border-radius: 10px;
+  font-family: paobunjin, Roboto;
+  border: 2.5px solid hsl(358, 100%, 27%);
+  background-color: gold;
+  color: darkred;
+  font-weight: 450;
+}
+
+.Addand_List {
+  flex: 1;
+  align-self: center;
+}
+
+.Addand_Price {
+  width: 100px;
+  text-align: right;
+  align-self: center;
+}
+
+.Addand_Note {
+  color: gold;
+  font-weight: 450;
+  font-family: paobunjin, Roboto;
+  letter-spacing: 0.075em;
+}
+
+.Addand_Note a{
+  color: white;
+  font-weight: 450;
+  font-family: paobunjin, Roboto;
+  text-decoration: underline;
+  letter-spacing: 0.075em;
+  transition: color 0.25s;
+}
+
+.Addand_Note a:hover{
+  cursor: pointer;
+  color: hsl(53, 100%, 50%);
+}
+
+.Addand_Note a:active{
+  cursor: pointer;
+  color: hsl(53, 100%, 41%);
+}
+
+@media (max-width: 560px) {
+
+  .Addand_PriceTitle {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 450;
+  }
+  .Addand_PriceBox{
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 450;
+  }
+  .Addand_List {
+    margin: 10px 0;
+  }
+  
+  .Addand_Price {
+    margin: 10px 0;
+  }
+
+  .Addand_Note {
+    font-size: 16px;
+    
+  }
+
+}
+
+@media (min-width: 560px) {
+  
+  .Addand_PriceTitle {
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: 450;
+  }
+  .Addand_PriceBox{
+    padding: 0 15px;
+    font-size: 24px;
+    font-weight: 450;
+  }
+  .Addand_List {
+    margin: 15px 0;
+  }
+  
+  .Addand_Price {
+    margin: 15px 0;
+  }
+
+  .Addand_Note {
+    margin: 10px 10px;
+    font-size: 24px;
+  }
+
+}
+
+/* Fake Ads */
+
+.Addand_AdsGrid {
+  margin-top: 30px;
+  display: grid;
+  column-gap: 5%;
+  row-gap: 10px;
+}
+
+.Addand_Ads {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .Addand_AdsGrid {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000.0000001px) {
+  .Addand_AdsGrid {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+}

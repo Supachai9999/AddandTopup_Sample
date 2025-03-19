@@ -1,0 +1,405 @@
+
+.Addand_CoHeader {
+  font-family: Paobunjin;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: hsl(53, 100%, 50%);
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.Addand_InfoTitle {
+  font-family: Paobunjin;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: hsl(53, 100%, 50%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Addand_InfoTitle a {
+  color: white;
+  text-decoration: underline;
+  transition: color 0.25s;
+}
+
+.Addand_InfoTitle a:hover {
+  cursor: pointer;
+  color: hsl(53, 100%, 50%);
+}
+
+.Addand_InfoTitle a:active {
+  cursor: pointer;
+  color: hsl(53, 100%, 41%);
+}
+
+.Addand_CocoHeader {
+  font-family: paobunjin;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: hsl(53, 100%, 50%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Addand_AboutTitle {
+  margin: 10px 5%;
+  font-family: paobunjin;
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  text-align: Left;
+  color: hsl(53, 100%, 50%);
+}
+
+.Addand_AboutTitle a {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  transition: color 0.25s;
+}
+
+.Addand_AboutTitle a:hover {
+  cursor: pointer;
+  color: hsl(53, 100%, 50%);
+}
+
+.Addand_AboutTitle a:active {
+  cursor: pointer;
+  color: hsl(53, 100%, 41%);
+}
+
+.Addand_AlertTitle {
+  margin: 10px 5%;
+  font-family: paobunjin;
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: hsl(53, 100%, 50%);
+}
+
+.Addand_AlertTitle a {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  transition: color 0.25s;
+}
+
+.Addand_AlertTitle a:hover {
+  cursor: pointer;
+  color: hsl(53, 100%, 50%);
+}
+
+.Addand_AlertTitle a:active {
+  cursor: pointer;
+  color: hsl(53, 100%, 41%);
+}
+
+
+.Addand_HorizontalLine {
+  width: 90%;
+  border: 2px solid hsl(53, 100%, 50%);
+}
+
+@media (max-width: 480px) {
+  .Addand_CoHeader {
+    font-size: 26px;
+  }
+  .Addand_CocoHeader {
+    font-size: 14px;
+  }
+  .Addand_InfoTitle {
+    font-size: 26px;
+  }
+  .Addand_AboutTitle {
+    font-size: 18px;
+  }
+  .Addand_AlertTitle {
+    font-size: 18px;
+  }
+  .Addand_HorizontalLine {
+    border: 1px solid hsl(53, 100%, 50%);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .Addand_CoHeader {
+    font-size: 30px;
+  }
+  .Addand_CocoHeader {
+    font-size: 18px;
+  }
+  .Addand_InfoTitle {
+    font-size: 30px;
+  }
+  .Addand_AboutTitle {
+    font-size: 22px;
+  }
+  .Addand_AlertTitle {
+    font-size: 20px;
+  }
+  .Addand_HorizontalLine {
+    border: 1.5px solid hsl(53, 100%, 50%);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 949px) {
+  .Addand_CoHeader {
+    font-size: 36px;
+  }
+  .Addand_CocoHeader {
+    font-size: 24px;
+  }
+  .Addand_InfoTitle {
+    font-size: 28px;
+  }
+  .Addand_AboutTitle {
+    font-size: 24px;
+  }
+  .Addand_AlertTitle {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 950px) {
+  .Addand_CoHeader {
+    font-size: 48px;
+  }
+  .Addand_CocoHeader {
+    font-size: 32px;
+  }
+  .Addand_InfoTitle {
+    font-size: 30px;
+  }
+  .Addand_AboutTitle {
+    font-size: 32px;
+  }
+  .Addand_AlertTitle {
+    font-size: 28px;
+  }
+}
+
+/*เกม 6 ช่อง*/
+
+.Addand_GameRow6 {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  padding: 0px 5%;
+  column-gap: 1%;
+  row-gap: 16px;
+  vertical-align: top;
+}
+
+@media (max-width: 550px) {
+  .Addand_GameRow6 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1%;
+    row-gap: 16px;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 899px) {
+  .Addand_GameRow6 {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1%;
+    row-gap: 16px;
+  }
+}
+
+@media (min-width: 900px) {
+  .Addand_GameRow6 {
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1%;
+    row-gap: 16px;
+  }
+}
+
+/*เกม 4 ช่อง*/
+
+.Addand_GameRow4 {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 0px 5%;
+  column-gap: 1%;
+  row-gap: 16px;
+  vertical-align: top;
+}
+
+@media (max-width: 550px) {
+  .Addand_GameRow4 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1%;
+    row-gap: 16px;
+  }
+}
+
+@media (min-width: 551px) {
+  .Addand_GameRow4 {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1%;
+    row-gap: 16px;
+  }
+}
+
+/*เกม 3 ช่อง*/
+
+.Addand_GameRow3 {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 0px 5%;
+  column-gap: 1%;
+  row-gap: 16px;
+  vertical-align: top;
+}
+
+@media (max-width: 550px) {
+  .Addand_GameRow3 {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1%;
+    row-gap: 16px;
+  }
+}
+
+@media (min-width: 551px) {
+  .Addand_GameRow3 {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1%;
+    row-gap: 16px;
+  }
+}
+
+/*เกม ตาราง*/
+
+.Addand_GameFlex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  padding: 0px 5%;
+  column-gap: 3%;
+  row-gap: 16px;
+  justify-content: space-evenly;
+}
+
+/*Game Box*/
+
+.Addand_GameBox {
+  width: 100%;
+  max-width: 150px;
+  justify-items: center;
+  /*background-color: aqua;*/
+}
+
+.Addand_GamePage {
+  text-decoration: none;
+}
+
+.Addand_GameIcon {
+  width: 100%;
+  border-radius: 40px;
+  justify-self: center;
+  object-fit: contain;
+  object-position: top;
+  box-shadow: hsl(46, 100%, 66%) 0px 0px 16px;
+  display: block;
+  size-adjust: flex;
+  transition: width 0.25s;  
+}
+
+.Addand_GameIcon:hover {
+  cursor: pointer;
+  width: 92.5%;  
+  object-fit: contain;
+  object-position: middle;
+  display: block;
+  size-adjust: flex;
+}
+
+.Addand_GameIcon:active {
+  cursor: pointer;
+  width: 90%;
+  object-fit: contain;
+  object-position: top;
+  display: block;
+  size-adjust: flex;
+  opacity: 0.8;  
+}
+
+.Addand_GameName {
+  color: hsl(53, 100%, 50%);;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-family: madeinchina, paobunjin;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 550px) {
+  .Addand_GameBox {
+    width: 100%;
+    max-width: 120px;
+    justify-items: center;
+    /*background-color: aqua;*/
+  }
+  .Addand_GameIcon {
+    width: 100%;
+    border-radius: 32px;
+  }
+}
+
+@media (min-width: 551px) {
+  .Addand_GameBox {
+    width: 100%;
+    max-width: 150px;
+    justify-items: center;
+    /*background-color: aqua;*/
+  }
+  .Addand_GameIcon {
+    width: 100%;
+    border-radius: 40px;
+  }
+}
+
+
+/* Fake Ads */
+
+.Addand_AdsGrid {
+  margin-top: 30px;
+  display: grid;
+  row-gap: 10px;
+  justify-items: center;
+}
+
+.Addand_Ads {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 1000px) {
+  .Addand_AdsGrid {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000.0000001px) {
+  .Addand_AdsGrid {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
