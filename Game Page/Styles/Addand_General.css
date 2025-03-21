@@ -201,6 +201,8 @@
   position: relative;
   justify-self: center;
   justify-content: center;
+  align-items: center; /* Add  */
+  place-items: center; /* Add  */
   width: 90%;
   margin-top: 20px;
   column-gap: 1%;
