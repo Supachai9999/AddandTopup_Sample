@@ -57,6 +57,16 @@
   color: hsl(53, 100%, 50%);
 }
 
+.Addand_AboutTitleH {
+  margin: 10px 5%;
+  font-family: paobunjin;
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: hsl(53, 100%, 50%);
+}
+
+
 .Addand_AboutTitle2 {
   margin: 10px 5%;
   color: white;
@@ -121,7 +131,7 @@
   .Addand_InfoTitle {
     font-size: 26px;
   }
-  .Addand_AboutTitle, .Addand_AboutTitle2 {
+  .Addand_AboutTitle, .Addand_AboutTitle2, .Addand_AboutTitleH {
     font-size: 18px;
   }
   .Addand_AlertTitle {
@@ -142,7 +152,7 @@
   .Addand_InfoTitle {
     font-size: 30px;
   }
-  .Addand_AboutTitle, .Addand_AboutTitle2 {
+  .Addand_AboutTitle, .Addand_AboutTitle2, .Addand_AboutTitleH {
     font-size: 22px;
   }
   .Addand_AlertTitle {
@@ -163,7 +173,7 @@
   .Addand_InfoTitle {
     font-size: 28px;
   }
-  .Addand_AboutTitle, .Addand_AboutTitle2 {
+  .Addand_AboutTitle, .Addand_AboutTitle2, .Addand_AboutTitleH {
     font-size: 24px;
   }
   .Addand_AlertTitle {
@@ -181,8 +191,8 @@
   .Addand_InfoTitle {
     font-size: 30px;
   }
-  .Addand_AboutTitle, .Addand_AboutTitle2 {
-    font-size: 32px;
+  .Addand_AboutTitle, .Addand_AboutTitle2, .Addand_AboutTitleH {
+    font-size: 30px;
   }
   .Addand_AlertTitle {
     font-size: 28px;
