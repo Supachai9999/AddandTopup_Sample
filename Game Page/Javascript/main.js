@@ -148,13 +148,13 @@ let redirectUrl2 = ''; /* แท็บใหม่ */
 let popupShown = false;
 
 const images = [
-  { img:'Game Page/รูป/Fake Ads/1.jpg', link:'https://www.facebook.com/share/v/15qDajiLNV/'}, /* กงยู G */
-  { img:'Game Page/รูป/Fake Ads/2.jpg', link:'https://www.facebook.com/share/v/1BDqA2f6GT/'}, /* Gwen Kluz */
-  { img:'Game Page/รูป/Fake Ads/3.jpg', link:'https://www.facebook.com/share/v/1Db8L7Q57F/'}, /* Sunny 7500 */
-  { img:'Game Page/รูป/Fake Ads/4.jpg', link:'https://www.facebook.com/share/p/161naUHeUv/'}, /* ผีเสื้อ Fight */
-  { img:'Game Page/รูป/Fake Ads/5.jpg', link:'https://www.facebook.com/share/v/196mnFJHHn/'}, /* กงยู T */
-  { img:'Game Page/รูป/Fake Ads/6.jpg', link:'https://www.facebook.com/share/v/1A47wkoSGx/'}, /* Alpha G */
-  { img:'Game Page/รูป/Fake Ads/7.jpg', link:'https://www.facebook.com/share/r/15nnvPaVyb/'}, /* G เด้า */
+  { img:'Game Page/รูป/Fake Ads/Gong Yu G.png', link:'https://www.facebook.com/share/v/15qDajiLNV/'}, /* กงยู G */
+  { img:'Game Page/รูป/Fake Ads/Gwenulz.png', link:'https://www.facebook.com/share/v/1BDqA2f6GT/'}, /* Gwen Kluz */
+  { img:'Game Page/รูป/Fake Ads/Sunny 7500 Web.png', link:'https://www.facebook.com/share/v/1Db8L7Q57F/'}, /* Sunny 7500 */
+  { img:'Game Page/รูป/Fake Ads/Butterfight.png', link:'https://www.facebook.com/share/p/161naUHeUv/'}, /* ผีเสื้อ Fight */
+  { img:'Game Page/รูป/Fake Ads/Gong Yu T.png', link:'https://www.facebook.com/share/v/196mnFJHHn/'}, /* กงยู T */
+  { img:'Game Page/รูป/Fake Ads/G G Shit.jpg', link:'https://www.facebook.com/share/v/1A47wkoSGx/'}, /* Alpha G */
+  { img:'Game Page/รูป/Fake Ads/G-บั้นเด้า-popup.gif', link:'https://www.facebook.com/share/r/15nnvPaVyb/'}, /* G เด้า */
   { img:'Game Page/รูป/Fake Ads/9.jpg', link:'https://www.facebook.com/share/v/1Fdsmb1k9U/'}, /* @& 1 */
   { img:'Game Page/รูป/Fake Ads/10.jpg', link:'https://www.facebook.com/share/v/1BJmfU91fu/'} /* @& 2 */
 ];
