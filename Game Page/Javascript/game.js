@@ -152,7 +152,10 @@ const images = [
   { img:'Game Page/รูป/Fake Ads/G G Shit.jpg', link:'https://www.facebook.com/share/v/1A47wkoSGx/'}, /* Alpha G */
   { img:'Game Page/รูป/Fake Ads/G-บั้นเด้า-popup.gif', link:'https://www.facebook.com/share/r/15nnvPaVyb/'}, /* G เด้า */
   { img:'Game Page/รูป/Fake Ads/9.jpg', link:'https://www.facebook.com/share/v/1Fdsmb1k9U/'}, /* @& 1 */
-  { img:'Game Page/รูป/Fake Ads/10.jpg', link:'https://www.facebook.com/share/v/1BJmfU91fu/'} /* @& 2 */
+  { img:'Game Page/รูป/Fake Ads/10.jpg', link:'https://www.facebook.com/share/v/1BJmfU91fu/'},
+  { img:'Game Page/รูป/Fake Ads/Green Head G.png', link:'https://www.facebook.com/share/v/16G6neG52g/'},
+  { img:'Game Page/รูป/Fake Ads/P Bid.png', link:'https://www.facebook.com/share/v/15d2jAn9Yh/'},
+  { img:'Game Page/รูป/Fake Ads/11.jpg', link:'https://www.twitch.tv/takluz/clip/JoyousDeadShieldArgieB8-i78iU09olt4tXtq5'}/* @& 2 */
 ];
 
 
